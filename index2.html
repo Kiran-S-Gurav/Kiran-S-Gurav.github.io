@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Landing Page Drwer 2</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #dbeafe; /* Tailwind's blue-100 for background */
+    }
+    .cta-box {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .btn-dark-custom {
+      background-color: #0f172a; /* Tailwind slate-900 */
+      color: white;
+      border: none;
+    }
+    .btn-dark-custom:hover {
+      background-color: #1e293b;
+    }
+    .module-card {
+      background: #f1f5f9;
+      border-radius: 10px;
+      padding: 15px;
+    }
+    .image-preview {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container py-5">
+    <!-- Responsive Section -->
+    <section class="py-4 ">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          
+          <!-- Text Block -->
+          <div class="col-12 col-md-9 order-2 order-md-1">
+            <div class="p-4 bg-white rounded shadow-sm">
+              <h2 class="h5  fw-bold">Blade Title</h2>
+              <h3 class="h6 text-muted mb-3">Blade Subtitle</h3>
+              <p class="text-secondary small">
+                We hold these truths to be self-evident, that all men are created equal, 
+                that they are endowed by their Creator with certain unalienable Rights, 
+                that among these are Life, Liberty and the pursuit of Happiness.
+              </p>
+              <a href="#" class="text-dark   text-decoration-none">Text Link</a>
+            </div>
+          </div>
+
+          <!-- Image Block -->
+          <div class="col-12 col-md-3 order-1 order-md-2">
+            <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa" 
+                alt="Space" class="img-fluid rounded shadow-sm w-100">
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <div class="row g-4 ps-3 pw-3 ">
+      
+      <!-- CTA Section -->
+      <div class="col-lg-6">
+        <h4>This is a CTA</h4>
+        <p class="mb-4">This module is placed here for example purposes. To see how the section class would behave in other columns.</p>
+        <div class="mb-2">
+          <a class="btn btn-dark-custom"  target="_blank" href="BladeContentFirst.html">Button Style 1</a>
+        </div>
+        <div>
+          <a class="btn btn-dark-custom"  target="_blank" href="BladeContentSecond.html">Button Style 2</a>
+        </div>
+      </div>
+
+      <!-- Image and Module Section -->
+      <div class="col-lg-6">
+        <div class="module-card mb-3">
+          <h5>Blade Title</h5>
+          <h6 class="text-muted">Blade Subtitle</h6>
+          <p style="font-size: 14px;">We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights...</p>
+          <a href="#" class="text-dark text-decoration-none">Text Link</a>
+        </div>
+        <img src="assets/images/blade-1.jpg" class="image-preview" alt="Space Image">
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
